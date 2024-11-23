@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header img{
+    height: 50px;
+
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0074d9; /* Fondo azul */
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 5px 0 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-group select,
+.input-group input {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #0074d9; /* Borde azul */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+.cancel-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .search-form {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .input-group select,
+    .input-group input {
+        width: 300px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
