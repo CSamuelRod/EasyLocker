@@ -162,7 +162,7 @@ button:hover {
 }
 
 .taquilla-item img {
-    width: 35vw; /* Aumenta el tamaño de la imagen al 25% del ancho de la pantalla */
+    width: 30vw; /* Aumenta el tamaño de la imagen al 25% del ancho de la pantalla */
     height: auto;
     margin-bottom: 1rem;
 }
@@ -185,7 +185,7 @@ button:hover {
     }
 
     .taquilla-item img {
-        width: 35vw; /* Ajuste de tamaño de la imagen para pantallas más grandes */
+        width: 30vw; /* Ajuste de tamaño de la imagen para pantallas más grandes */
     }
 }
 
