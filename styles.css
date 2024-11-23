@@ -162,7 +162,7 @@ button:hover {
 }
 
 .taquilla-item img {
-    width: 20vw; /* Ajuste con el 20% del ancho de la pantalla */
+    width: 25vw; /* Aumenta el tamaño de la imagen al 25% del ancho de la pantalla */
     height: auto;
     margin-bottom: 1rem;
 }
@@ -180,40 +180,15 @@ button:hover {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    .header {
-        padding: 1rem 10%;
-    }
-
-    .nav {
-        gap: 2rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .form-container {
-        padding: 3rem;
-    }
-
-    .info {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .info-item {
-        max-width: 22%;
-    }
-
-    /* Para taquillas */
     .taquilla-item {
         max-width: 30%;
     }
 
     .taquilla-item img {
-        width: 15vw; /* Ajustamos el tamaño de la imagen para pantallas más grandes */
+        width: 20vw; /* Ajuste de tamaño de la imagen para pantallas más grandes */
     }
 }
+
 
 /* Estilo para la sección de ubicaciones */
 .locations {
