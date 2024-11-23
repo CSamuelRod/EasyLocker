@@ -134,6 +134,50 @@ button:hover {
     color: #333;
 }
 
+/* Nueva Sección de Taquillas */
+.taquillas {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.taquillas h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.taquillas p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.taquilla-item {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+.taquilla-item img {
+    width: 20vw; /* Ajuste con el 20% del ancho de la pantalla */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.taquilla-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.taquilla-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     .header {
@@ -159,5 +203,110 @@ button:hover {
 
     .info-item {
         max-width: 22%;
+    }
+
+    /* Para taquillas */
+    .taquilla-item {
+        max-width: 30%;
+    }
+
+    .taquilla-item img {
+        width: 15vw; /* Ajustamos el tamaño de la imagen para pantallas más grandes */
+    }
+}
+
+/* Estilo para la sección de ubicaciones */
+.locations {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.locations h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.locations p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Contenedor de ciudades */
+.cities {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.city-item {
+    text-align: center;
+}
+
+.city-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 0.5rem;
+}
+
+.city-item p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo para la sección de características */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    width: 150px;
+}
+
+.feature-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.texto{
+    background-color: #3dc8e7;
+}
+
+/* Media Queries para dispositivos más grandes */
+@media (min-width: 768px) {
+    .locations {
+        padding: 4rem 2rem;
+    }
+
+    .locations h2 {
+        font-size: 2.5rem;
+    }
+
+    .cities {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .city-item img {
+        max-width: 200px;
+    }
+
+    .features {
+        justify-content: flex-start;
     }
 }
