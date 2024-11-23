@@ -297,3 +297,69 @@ button:hover {
         justify-content: flex-start;
     }
 }
+
+/* Estilo para la sección de guía de pago */
+.guia-pago {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.guia-pago h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.guia-pago p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para cada paso */
+.paso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.paso img {
+    width: 100%;
+    max-width: 800px; /* Límite para pantallas más grandes */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion {
+    max-width: 800px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.descripcion h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    .paso {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion {
+        padding: 0.5rem;
+    }
+}
