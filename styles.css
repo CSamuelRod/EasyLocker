@@ -238,12 +238,18 @@ button:hover {
 .cities {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem; /* Aumentamos el espacio entre los items */
     justify-content: center;
 }
 
+/* Elementos de ciudad */
 .city-item {
     text-align: center;
+    margin: 1rem; /* Agregamos espacio alrededor de cada ciudad */
+    padding: 0.5rem; /* Agrega espacio interno para mejorar la separación visual */
+    background-color: #fff; /* Fondo blanco para resaltar las imágenes */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
 }
 
 .city-item img {
@@ -284,8 +290,14 @@ button:hover {
     color: #555;
 }
 
-.texto{
-    background-color: #3dc8e7;
+/* Clase texto - Fondo azulado y borde redondeado */
+.texto {
+    background-color: #3dc8e7; /* Azul brillante */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 /* Media Queries para dispositivos más grandes */
