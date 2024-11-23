@@ -13,6 +13,12 @@
             <div class="logo-left">
                 <img src="images/logoV2.jpeg" alt="Logo Izquierdo">
             </div>
+            <nav class="nav">
+                <a href="#">Reservar</a>
+                <a href="#">Larga duración</a>
+                <a href="#">Franquicias</a>
+                <a href="#">FAQs</a>
+            </nav>
             <div class="logo-right">
                 <img src="images/icEspaña.png" alt="Logo Derecho">
             </div>
@@ -22,20 +28,22 @@
     <!-- Hero Section -->
     <section class="hero">
         <h1>Viaja y disfruta de la ciudad sin maletas</h1>
-        <p>Consignas de equipaje</p>
-        <form class="search-form">
-            <div class="input-group">
-                <select>
-                    <option value="" disabled selected>Elige una ciudad</option>
-                    <option value="ciudad1">Ciudad 1</option>
-                    <option value="ciudad2">Ciudad 2</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <input type="date" placeholder="Selecciona Fechas">
-            </div>
-            <button type="submit">ELEGIR TAQUILLA</button>
-        </form>
+        <div class="form-container">
+            <p>Consignas de equipaje</p>
+            <form class="search-form">
+                <div class="input-group">
+                    <select>
+                        <option value="" disabled selected>Elige una ciudad</option>
+                        <option value="ciudad1">Ciudad 1</option>
+                        <option value="ciudad2">Ciudad 2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="date" placeholder="Selecciona Fechas">
+                </div>
+                <button type="submit">ELEGIR TAQUILLA</button>
+            </form>
+        </div>
         <p class="cancel-info">Cancela gratis 24h antes de tu reserva</p>
     </section>
 </body>

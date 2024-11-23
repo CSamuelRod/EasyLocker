@@ -2,57 +2,90 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 /* Header */
 .header {
-    background-color: #f4f4f4;
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 5%;
+    background-color: #f4f4f4;
     border-bottom: 1px solid #ddd;
 }
 
-.header img{
-    height: 50px;
-
+.logo-left img,
+.logo-right img {
+    height: 8vh;
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
 }
+
+/* Navegación */
+/* Navegación */
+.nav {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces horizontalmente */
+    align-items: center;      /* Centra los enlaces verticalmente */
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #0074d9;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #005bb5;
+}
+
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #0074d9; /* Fondo azul */
-    color: #fff;
+    padding: 2rem 1rem;
 }
 
 .hero h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin: 5px 0 20px;
+.form-container {
+    background-color: #0074d9; /* Fondo azul */
+    padding: 2rem;
+    border-radius: 10px; /* Bordes redondeados */
+    color: #fff;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.form-container p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Formulario */
 .search-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .input-group select,
 .input-group input {
-    width: 90%;
-    max-width: 400px;
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #0074d9; /* Borde azul */
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #005bb5;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -60,8 +93,8 @@ button {
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -71,32 +104,26 @@ button:hover {
 }
 
 .cancel-info {
-    margin-top: 10px;
-    font-size: 0.9em;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
-    .hero {
-        padding: 60px 20px;
+    .header {
+        padding: 1rem 10%;
+    }
+
+    .nav {
+        gap: 2rem;
     }
 
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
-    .search-form {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .input-group select,
-    .input-group input {
-        width: 300px;
-    }
-
-    button {
-        padding: 12px 25px;
-        font-size: 1.1em;
+    .form-container {
+        padding: 3rem;
     }
 }
