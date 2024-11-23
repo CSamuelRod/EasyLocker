@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
 }
 
 /* Header */
@@ -24,11 +24,10 @@ body {
 }
 
 /* Navegación */
-/* Navegación */
 .nav {
     display: flex;
-    justify-content: center;  /* Centra los enlaces horizontalmente */
-    align-items: center;      /* Centra los enlaces verticalmente */
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     font-size: 1rem;
 }
@@ -43,7 +42,6 @@ body {
     color: #005bb5;
 }
 
-
 /* Hero Section */
 .hero {
     text-align: center;
@@ -57,9 +55,9 @@ body {
 }
 
 .form-container {
-    background-color: #0074d9; /* Fondo azul */
+    background-color: #0074d9;
     padding: 2rem;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     color: #fff;
     margin: 0 auto;
     max-width: 500px;
@@ -109,6 +107,33 @@ button:hover {
     color: #666;
 }
 
+/* Información adicional */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.info-item {
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+}
+
+.info-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.info-item h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     .header {
@@ -125,5 +150,14 @@ button:hover {
 
     .form-container {
         padding: 3rem;
+    }
+
+    .info {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .info-item {
+        max-width: 22%;
     }
 }
