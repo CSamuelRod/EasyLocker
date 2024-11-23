@@ -17,7 +17,7 @@ body {
 
 .logo-left img,
 .logo-right img {
-    height: 8vh;
+    height: 10vh;
     max-height: 60px;
     width: auto;
     object-fit: contain;
